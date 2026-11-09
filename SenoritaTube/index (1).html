@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sonora: listen together</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <h1>Listen together, in sync.</h1>
+  <p class="lead">Start a room, share the code, and everyone hears the same song at the same second.</p>
+
+  <div id="setup" class="banner err" hidden>
+    Firebase isn't set up yet. Open <b>firebase-config.js</b> and paste your project settings (see README).
+  </div>
+
+  <div class="stack">
+    <label class="muted" for="name">Your name</label>
+    <input id="name" type="text" maxlength="20" placeholder="e.g. Sam" autocomplete="nickname">
+
+    <button id="create" class="primary">Start a new room</button>
+
+    <div class="divider">or join a friend</div>
+
+    <form id="join" class="row">
+      <input id="code" type="text" maxlength="8" placeholder="Room code" autocapitalize="characters" autocomplete="off" aria-label="Room code">
+      <button class="primary" type="submit">Join</button>
+    </form>
+
+    <a id="resume" class="card" href="#" hidden></a>
+  </div>
+
+  <nav class="tabs" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="search.html">Search</a>
+    <a href="library.html">Library</a>
+    <a href="room.html">Room</a>
+  </nav>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
