@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Search · Sonora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="search">
+  <h1>Search</h1>
+  <div id="roomBanner" class="banner"></div>
+
+  <form id="searchForm" class="row">
+    <input type="search" placeholder="Song or artist" aria-label="Search songs" autocomplete="off">
+    <button class="primary" type="submit">Search</button>
+  </form>
+
+  <h2>Results</h2>
+  <ul id="results" class="songs"><li class="empty">Search for a song to play with your room.</li></ul>
+
+  <nav class="tabs" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="search.html" aria-current="page">Search</a>
+    <a href="library.html">Library</a>
+    <a href="room.html">Room</a>
+  </nav>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
