@@ -12,4 +12,4 @@ export const firebaseConfig = {
 // JioSaavn API (github.com/sumitkolhe/jiosaavn-api).
 // Deploy your own copy (Vercel one-click) and put its URL here, ending in /api.
 // The public demo may be rate limited or offline.
-export const API_BASE = "https://saavn.dev/api";
+export const API_BASE = "https://saavn.sumit.co/api";
